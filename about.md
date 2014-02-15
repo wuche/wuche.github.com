@@ -9,7 +9,7 @@ group: "navigation"
 
 ### 关于我
 
-技术上倾向于开源运动 <br/>
+<!-- 技术上倾向于开源运动 <br/>
 政治上倾向于自由主义
 
 西北王氏，自幼放羊，排行老五，自称放羊娃王老五
@@ -28,5 +28,5 @@ group: "navigation"
 [weibo]: http://weibo.com/jolestar
 
 [google]: http://www.google.com/profiles/jolestar
-[github]: http://github.com/jolestar
+[github]: http://github.com/jolestar -->
 
