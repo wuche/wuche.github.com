@@ -7,8 +7,8 @@ pygments: true
 paginate: 4
 
 # 修改为自己的配置
-title : 隐匿于黑夜中的星
-tagline: 时间的回响，思维的残影
+title : performance
+tagline: 专注于移动互联网性能
 author :
   name : wuche
   email : huiquanhuang@gmail.com
