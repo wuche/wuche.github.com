@@ -1,7 +1,0 @@
----
-layout: post
-title: "项目管理的一些心得"
-description: "在一个项目中，遇到的一些事，以及一些体会"
-tags: [project manage]
-published: true
----
