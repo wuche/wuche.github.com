@@ -55,9 +55,9 @@ public class Person {
   }
 
 }    
-```       
+```  
 排序测试类，继承java的comparator接口。      
-```java            
+```java   
 public class ComparatorTest implements Comparator<Person>{
 
   @Override
