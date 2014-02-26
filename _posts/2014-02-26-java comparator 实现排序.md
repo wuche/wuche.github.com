@@ -9,7 +9,7 @@ tags:
   
 ---    
 在web开发过程中，经常要对list进行排序，升序，降序。数据库是mysql的话，直接可以从数据中捞出已经排好序的结果。
-这里介绍一种用java实现的排序方法，可以对list中的对象进行排序，非常方便。
+这里介绍一种用java实现的排序方法，可以对list中的对象进行排序，非常方便。  
 <!--more-->  
 对象类。根据person类的name进行排序。
 ```java   
@@ -84,7 +84,4 @@ public class ComparatorTest implements Comparator<Person>{
   }
 
 }
-
-
-
   ```
