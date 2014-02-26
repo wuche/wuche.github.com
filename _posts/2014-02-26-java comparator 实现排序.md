@@ -54,10 +54,10 @@ public class Person {
     
   }
 
-}
-  ```       
-  排序测试类，继承java的comparator接口。      
-  ```java            
+}    
+```       
+排序测试类，继承java的comparator接口。      
+```java            
 public class ComparatorTest implements Comparator<Person>{
 
   @Override
@@ -83,5 +83,5 @@ public class ComparatorTest implements Comparator<Person>{
 
   }
 
-}
-  ```
+}  
+```  
