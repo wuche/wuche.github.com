@@ -1,5 +1,5 @@
 ---
-title: java comparator 接口排序实现   
+title: java comparator接口实现    
 author: wuche  
 layout: post  
 permalink:  /java-comparator/  
