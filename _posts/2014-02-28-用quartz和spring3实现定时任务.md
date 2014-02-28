@@ -24,9 +24,10 @@ tags:
 
 2.定义job类，定义几个方法，用来执行任务。  
 ```java  
-public class LwJob {
+
+public class LwJob {  
     @Autowired
-    private LwFlowService lwFlowService;
+    private LwFlowService lwFlowService;  
 
     public void syncYesterdayData(){
        // System.out.println("hello!!");
@@ -46,9 +47,10 @@ public class LwJob {
 
     }
 }  
+
 ```  
 3.在spring的bean配置文件中，定义这个类。  
-```xml  
+ 
       <bean id="exampleBusinessObject" class="com.laiwang.perf.util.LwJob"/> 
       <!--定义MethodInvokingJobDetailFactoryBean，可以定义多个-->
       <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
@@ -62,10 +64,9 @@ public class LwJob {
         <property name="targetObject" ref="exampleBusinessObject" />
         <property name="targetMethod" value="syncLiveData" />
     </bean>  
-``` 
-4.配置trigger，触发器。常见的有两种，一种是周期性的。另一种是在某个时间点,我这里定义了启动1分钟后触发，每隔1小时重复任务。另一种是每天早上6点定时触发。 
 
-```xml  
+4.配置trigger，触发器。常见的有两种，一种是周期性的。另一种是在某个时间点,我这里定义了启动1分钟后触发，每隔1小时重复任务。另一种是每天早上6点定时触发。 
+  
     <bean id="liveTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
         <!-- see the example of method invoking job above -->
         <property name="jobDetail" ref="syncLiveData" />
@@ -80,9 +81,9 @@ public class LwJob {
         <!-- run every morning at 6 AM -->
         <property name="cronExpression" value="0 0 6 * * ?" />
     </bean>  
-```  
+  
 5.定义完触发器，加上触发器的schedule,schedule的list里可以增加多个trigger，不同类型的trigger。  
-```xml  
+  
     <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
         <property name="triggers">
             <list>
@@ -91,6 +92,6 @@ public class LwJob {
             </list>
         </property>
     </bean>  
-```  
+ 
 6.这样用quartz+spring的定时任务就实现了，非常简单，也很强大。google了一下午，原来发现最有用的还是官方的文档。哎！    
-[参考文献] http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/scheduling.html  
+[参考文献](http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/scheduling.html) 
