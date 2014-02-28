@@ -123,14 +123,15 @@ public class ComparatorTest implements Comparator<Person>{
 
 }    
 ```  
-  
+```java  
+
   class AgeComparartor implements Comparator<Person>{
     @Override
     public int compare(Person person, Person person2) {
         return person.getAge()-person2.getAge();  //To change body of implemented methods use File | Settings | File Templates.
     }
 }  
- 
+```  
 
   输出结果：   
 Person [name=zzz]   
