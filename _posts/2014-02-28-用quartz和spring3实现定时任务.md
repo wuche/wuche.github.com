@@ -22,9 +22,9 @@ tags:
             <version>1.8.6</version>
         </dependency>
 
-2.定义job类，定义几个方法，用来执行任务。  
-```java  
+2.定义job类，定义几个方法，用来执行任务。
 
+```java
 public class LwJob {  
     @Autowired
     private LwFlowService lwFlowService;  
@@ -46,9 +46,9 @@ public class LwJob {
         System.out.println("test!");
 
     }
-}  
-
-```  
+}
+``` 
+ 
 3.在spring的bean配置文件中，定义这个类。  
  
       <bean id="exampleBusinessObject" class="com.laiwang.perf.util.LwJob"/> 
