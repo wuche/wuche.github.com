@@ -12,7 +12,7 @@ tags:
 这里介绍一种用java实现的排序方法，可以对list中的对象进行排序，非常方便。  
 <!--more-->  
 对象类。根据person类的name进行排序.  
-```java   
+
 public class Person {
   
   private String name;
@@ -82,10 +82,10 @@ public class ComparatorTest implements Comparator<Person>{
   }
 
 }  
-```  
+
    
 根据person的name排序，是按照string的字母顺序。有的时候，需要对数字的大小进行排序。  Comparator 比较器也可以实现。  
-```java   
+  
 
   public class ComparatorTest implements Comparator<Person>{
 
@@ -121,7 +121,7 @@ public class ComparatorTest implements Comparator<Person>{
         return person.getAge()-person2.getAge();  //To change body of implemented methods use File | Settings | File Templates.
     }
 }  
-```  
+ 
 
   输出结果：   
 Person [name=zzz]   
