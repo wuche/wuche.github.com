@@ -11,6 +11,9 @@ tags:
 在web开发过程中，经常要对list进行排序，升序，降序。数据库是mysql的话，直接可以从数据中捞出已经排好序的结果。
 这里介绍一种用java实现的排序方法，可以对list中的对象进行排序，非常方便。  
 <!--more-->  
+
+```java  
+
 对象类。根据person类的name进行排序.  
 
 public class Person {
@@ -54,7 +57,10 @@ public class Person {
     
   }
 
-}   
+}  
+```  
+
+```java  
   
 public class ComparatorTest implements Comparator<Person>{
 
@@ -82,11 +88,12 @@ public class ComparatorTest implements Comparator<Person>{
   }
 
 }  
-
+```  
    
 根据person的name排序，是按照string的字母顺序。有的时候，需要对数字的大小进行排序。  Comparator 比较器也可以实现。  
   
-
+```java  
+  
   public class ComparatorTest implements Comparator<Person>{
 
   @Override
@@ -114,7 +121,9 @@ public class ComparatorTest implements Comparator<Person>{
   }
 
 
-}
+}    
+```  
+  
   class AgeComparartor implements Comparator<Person>{
     @Override
     public int compare(Person person, Person person2) {
