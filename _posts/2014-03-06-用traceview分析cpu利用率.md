@@ -1,8 +1,8 @@
- ---
- title: analysis android app CPU usage with traceview  
- author: wuche  
- layout: post  
- permalink:  /android-traceview/  
+---  
+title: analysis android app CPU usage with traceview  
+author: wuche  
+layout: post  
+permalink:  /android-traceview/  
 tags:   
  -  android
  -  traceview
