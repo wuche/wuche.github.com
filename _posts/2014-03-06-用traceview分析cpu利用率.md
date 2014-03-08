@@ -37,11 +37,12 @@ Debug.stopMethodTracing();
 两个可优化的地方  
 1.EmoilPackageMgr.checkNewEmotionPackageAdded()方法  
 2.java 并发锁   
-![img](../images/lw2.png)  
+![img](../images/lw2.jpeg)  
 逐步分析方法的调用，对业务代码来说，最底层的调用是Settings.loadProperties方法。cpu消耗61.4% ，再往下走，就是调用java的classload，getResourceAsStream方法了。  
-![img](../images/lw3.png)  
+![img](../images/lw3.jpeg)  
 对java并发锁来说，消耗cpu 30%，其中自身消耗cpu 11.1%，重复调用的次数：1834次。  
-这个java并发锁，消耗系统的cpu30%左右，有点高。需要重点排查下原因。  ![img](../images.lw4.png)  
+这个java并发锁，消耗系统的cpu30%左右，有点高。需要重点排查下原因。 
+![img](../images/lw4.png)  
 
 附录:traceview 图表的名词解析  
 - Exclusive: 同级函数本身运行的时间  
