@@ -10,8 +10,8 @@ tags:
   
 ---  
 relativeLayout的性能要比linearLayout好。如果有时间，可以把所有LinearLayout改为RelativeLayout。看到一个很好的相对布局的demo，动手写了一遍。  
+<!--more-->  
 ```xml  
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
